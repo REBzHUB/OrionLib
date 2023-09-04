@@ -1,17 +1,9 @@
-local Orion1 = game.CoreGui:FindFirstChild("REDz HUB <Orion Lib>")
-
-if OrionR then
-  OrionR:Destroy()
-end
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
-
-local texttext = Color3.fromRGB(255,0,0)
 
 local OrionLib = {
 	Elements = {},
@@ -20,8 +12,8 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(25, 25, 25),
-			Second = Color3.fromRGB(32, 32, 32),
+			Main = Color3.fromRGB(0, 0, 0),
+			Second = Color3.fromRGB(10, 10, 10),
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240,240,240),
